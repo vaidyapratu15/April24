@@ -19,13 +19,15 @@ public class Utilities {
 
 	
 	public static String CaptureScreenshots(String testCaseName, WebDriver driver) throws IOException {
-	   // File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File pqr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	//	File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File xyz = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	
 		String datestamp = new SimpleDateFormat("yyyy_MM_dd").format(new Date());
 		String timestamp = new SimpleDateFormat("hh_mm_ss").format(new Date());
 		File distination = new File(System.getProperty("user.dir") + "//ScreenShots//" + datestamp + "//" + testCaseName
 				+ timestamp + ".png");
-		FileUtils.copyFile(pqr, distination);
+		FileUtils.copyFile(xyz, distination);
+
 		return System.getProperty("user.dir") + "//Screenshots//" + datestamp + "//" + testCaseName + timestamp
 				+ ".png";
 	}
