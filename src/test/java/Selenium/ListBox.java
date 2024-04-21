@@ -1,4 +1,4 @@
-package ListBox;
+package Selenium;
 
 import java.util.List;
 import org.openqa.selenium.By;
@@ -15,7 +15,7 @@ public class ListBox extends BaseTest{
     public void openBrowse(){  // this program weote in file.html
         driver.get("http://127.0.0.1:5500/src/test/java/ListBox/file.html");
         test.info(driver.getCurrentUrl());
-
+   
     }
 
     @Test (priority = 1)
