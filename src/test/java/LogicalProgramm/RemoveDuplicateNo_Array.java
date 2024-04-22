@@ -23,12 +23,12 @@ public class RemoveDuplicateNo_Array {
             }
         }
 
-        System.out.println(map);
+        System.out.println(map);  // here you will get all no 
 
         Set<Integer> k = map.keySet();
 
         for (Integer key : k){
-            if(map.get(key)>1){
+            if(map.get(key)>1){    // here remove duplicate
                 System.out.println(key + " : " + map.get(key));
             }
         }
