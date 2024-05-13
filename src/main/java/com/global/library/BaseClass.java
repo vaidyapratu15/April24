@@ -33,6 +33,8 @@ public class BaseClass {
         driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+	
 	}
 	
 	public static void setExtentReport() {
